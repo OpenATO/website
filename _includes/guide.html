@@ -1,0 +1,21 @@
+<ul class="usa-card-group">
+    {% for item in site.data.guide.docs %}
+    <li class="grid-col-4 usa-card">
+        <div class="usa-card__container">
+            <div class="usa-card__media">
+                <div class="usa-card__img text-center card-guide">
+                    <a href="{{ site.baseurl }}/guide{{ item.url }}" aria-label="{{ item.title }}">{{ item.icon }}</a>
+                </div>
+            </div>
+            <header class="usa-card__header">
+                <h2 class="usa-card__heading"><a href="{{ site.baseurl }}/guide{{ item.url }}">{{ item.title }}</a></h2>
+            </header>
+            <div class="usa-card__body">
+                <p>{{ item.description }}</p>
+            </div>
+            <div class="usa-card__footer">
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
