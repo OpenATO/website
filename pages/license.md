@@ -1,6 +1,6 @@
 ---
 title: License
-description: License for ATO ASAP.
+description: License for OpenATO.
 permalink: /license
 
 layout: page

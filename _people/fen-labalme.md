@@ -7,9 +7,8 @@ image: fen-labalme.jpg
 categories:
  - Security and compliance
 linkedin: https://www.linkedin.com/in/fenlabalme/
-twitter: https://twitter.com/openprivacy
 github: https://github.com/openprivacy
-gitlab: 
+gitlab: https://gitlab.com/openprivacy
 drupal: 
 speakerdeck: 
 website: 

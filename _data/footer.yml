@@ -32,7 +32,7 @@ links: footer
 big_footer_signup_form: false
 
 # Configuration for footer heading. (optional)
-heading: ATO ASAP
+heading: OpenATO
 
 # Configuration for agency logo(s) (shown side by side).
 # If the logo is external add external: true
@@ -47,7 +47,7 @@ contact:
   # Comment out links you don't want to use (RSS is an example)
   social_links:
     - text: GitHub
-      href: https://github.com/ato-asap
+      href: https://github.com/OpenATO
       external: true
       type: github
 #    - text: Facebook

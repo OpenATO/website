@@ -1,4 +1,4 @@
-title: ATO ASAP
+title: OpenATO
 description: 
 # baseurl: /compliance-as-code # the subpath of your site, e.g. /blog
 # url: https://govthinktank.github.io/compliance-as-code/ # the base hostname & protocol for your site, e.g. http://example.com
@@ -6,10 +6,10 @@ description:
 # GitHub information
 # This is used for adding an edit this page link to the footer
 github_info:
-  organization: ato-asap
+  organization: openato
   repository: website
 
-url: "https://ato-asap.github.io" # the base hostname & protocol for your site
+url: "https://openato.github.io" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from

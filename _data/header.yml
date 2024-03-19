@@ -22,8 +22,11 @@ type: extended-mega
 # If the logo is external add external: true
 # logo:
 #   src: /assets/img/logos/logo.png
-#   alt: ATO ASAP
+#   alt: OpenATO
 #  external: #true
+logo:
+  src: /assets/img/logos/OpenATO.png
+  alt: OpenATO
 
 # this is a key into _data/navigation.yml
 primary:

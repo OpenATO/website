@@ -14,4 +14,4 @@ From the post:
 
 > If we collaborate and take deliberate steps to integrate automation, we can unlock the bureaucratic inertia that has stalled compliance modernization and fix the ATO problem once and for all.
 
-Full post: [ATO ASAP: Let’s finally fix the security compliance problem](https://fcw.com/articles/2021/02/04/comment-lazzeri-automate-ato.aspx)
+Full post: [ATO ASAP: Let’s finally fix the security compliance problem](https://www.nextgov.com/modernization/2021/02/ato-asap-lets-finally-fix-the-security-compliance-problem/258357/)

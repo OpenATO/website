@@ -7,7 +7,7 @@ permalink: /accessibility
 
 ## Our goals
 
-The ATO ASAP website is a work in progress, but as part of this we are attempting to follow the best practices we are documenting.
+The OpenATO website is a work in progress, but as part of this we are attempting to follow the best practices we are documenting.
 
 We strive to meet the latest W3C Recommendation of the WCAG guidelines (currently [WCAG 2.1 AA](https://www.w3.org/TR/WCAG21/)).
 
@@ -27,7 +27,7 @@ The pages on this website are primarily written in Markdown which substantially 
 
 ## Known issues
 
-* [Open website accessibility issues](https://github.com/CivicActions/ato-asap/labels/accessibility)
+* [Open website accessibility issues](https://github.com/CivicActions/openato/labels/accessibility)
 * We can control the accessibility of the site, but not the accessibility of GitHub. GitHub is reasonably accessible, but is not currently seeking to be as accessible as this site.
 
 ## Feedback
@@ -35,5 +35,5 @@ The pages on this website are primarily written in Markdown which substantially 
 If you run into any accessibility barriers with this website, please contact us:
 
 * Email: [accessibility@civicactions.com](mailto:ato-asap@civicactions.com)
-* [Submit an issue](https://github.com/CivicActions/ato-asap/issues)
+* [Submit an issue](https://github.com/CivicActions/OpenATO/issues)
 * [Submit a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
