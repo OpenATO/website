@@ -5,7 +5,7 @@ description: OpenATO is an open project and community to support streamlining th
 layout: home
 
 hero:
-  image: 
+  image:
   callout:
     alt: 
     text: OpenATO together.

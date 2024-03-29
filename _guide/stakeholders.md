@@ -17,9 +17,7 @@ Key stakeholders include:
 * Security professionals
 * Acquisition professionals
 * Audit and assessment personnel
-* Baseline authors
-* Tool developers
+* System and component developers
 * Policy authors
 * Bureaucracy hackers
 * Industry
-* Media
