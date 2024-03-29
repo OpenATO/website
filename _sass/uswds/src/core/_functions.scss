@@ -4,7 +4,6 @@ Functions
 ----------------------------------------
 */
 
-
 // The following vars need to be set
 // here, before the rest of the system
 // variables are set
@@ -56,7 +55,7 @@ Remove the unit of a length
 
 @function strip-unit($number) {
   @if type-of($number) == "number" and not unitless($number) {
-    @return ($number / ($number * 0 + 1));
+    @return $number / ($number * 0 + 1);
   }
 
   @return $number;
@@ -351,7 +350,7 @@ the desired final units (currently rem)
 */
 
 @function spacing-multiple($unit) {
-  $grid-to-rem: calc(($system-spacing-grid-base * $unit) / $root-font-size-equiv) *
+  $grid-to-rem: ($system-spacing-grid-base * $unit) / $root-font-size-equiv *
     1rem;
 
   @return $grid-to-rem;
@@ -367,7 +366,7 @@ Converts a value in rem to a value in px
 
 @function rem-to-px($value-in-rem) {
   @if unit($value-in-rem) == "rem" {
-    $rem-to-px: calc($value-in-rem / 1rem) * $root-font-size-equiv;
+    $rem-to-px: ($value-in-rem / 1rem) * $root-font-size-equiv;
     @return $rem-to-px;
   }
   @if unit($value-in-rem) != "px" {
@@ -387,7 +386,7 @@ queries
 */
 
 @function rem-to-user-em($grid-in-rem) {
-  $rem-to-user-em: calc(($grid-in-rem / 1rem) * 1em);
+  $rem-to-user-em: ($grid-in-rem / 1rem) * 1em;
 
   @return $rem-to-user-em;
 }
@@ -441,8 +440,8 @@ Converts a value in px to a value in rem
   @if not $pixels {
     @return false;
   }
-  $px-to-rem: calc($pixels / $root-font-size-equiv) * 1rem;
-  $px-to-rem: calc(round($px-to-rem * 100) / 100);
+  $px-to-rem: ($pixels / $root-font-size-equiv) * 1rem;
+  $px-to-rem: round($px-to-rem * 100) / 100;
 
   @return $px-to-rem;
 }
@@ -461,7 +460,7 @@ to a set target
     @return false;
   }
 
-  $this-scale: calc($system-base-cap-height * strip-unit($scale) / $cap-height * 1px);
+  $this-scale: $system-base-cap-height * strip-unit($scale) / $cap-height * 1px;
 
   @return px-to-rem($this-scale);
 }
@@ -540,9 +539,9 @@ a family and a line-height scale unit
 
   $this-cap: map-get($project-cap-heights, $family);
   $this-line-height: map-get($system-line-height, $scale);
-  $normalized-line-height: calc($this-line-height /
-    ($system-base-cap-height / $this-cap));
-  $normalized-line-height: calc(round($normalized-line-height * 10) / 10);
+  $normalized-line-height: $this-line-height /
+    ($system-base-cap-height / $this-cap);
+  $normalized-line-height: round($normalized-line-height * 10) / 10;
 
   @return $normalized-line-height;
 }
@@ -752,7 +751,7 @@ grid.
   }
 
   $numeric-eq: map-get($spacing-to-value, $gap-size);
-  $numeric-eq-half: inspect(calc($numeric-eq / 2));
+  $numeric-eq-half: inspect($numeric-eq / 2);
 
   @if not map-has-key($spacing-to-token, $numeric-eq-half) {
     @error '`#{$gap-size}` is not a valid USWDS gap size token. '
@@ -820,7 +819,7 @@ Ex: columns(2) --> 6
   @if 12 % $number != 0 {
     @error '`#{$number}` must be a divisor of 12.';
   }
-  $columns: calc(12 / $number);
+  $columns: 12 / $number;
   @return $columns;
 }
 
@@ -917,7 +916,7 @@ Includes helper functions
     }
   } @else if $exponent < 0 {
     @for $i from 1 through -$exponent {
-      $value: calc($value / $number);
+      $value: $value / $number;
     }
   }
 
@@ -949,7 +948,7 @@ Includes helper functions
 }
 
 @function exp-maclaurin($x, $n) {
-  @return calc(pow($x, $n) / factorial($n));
+  @return (pow($x, $n) / factorial($n));
 }
 
 @function exp($value) {
@@ -957,7 +956,7 @@ Includes helper functions
 }
 
 @function ln-maclaurin($x, $n) {
-  @return calc(pow(-1, $n + 1) / $n) * (pow($x - 1, $n));
+  @return (pow(-1, $n + 1) / $n) * (pow($x - 1, $n));
 }
 
 @function ln($value) {
@@ -970,7 +969,7 @@ Includes helper functions
 
   @return summation(
       get-function("ln-maclaurin"),
-      calc($value / pow(10, $ten-exp)),
+      $value / pow(10, $ten-exp),
       1,
       100
     ) + $ten-exp * $ln-ten;
@@ -993,9 +992,9 @@ Includes helper functions
     $value: $value / 256;
 
     @if $value < 0.03928 {
-      $value: calc($value / 12.92);
+      $value: $value / 12.92;
     } @else {
-      $value: calc($value + 0.055) / 1.055;
+      $value: ($value + 0.055) / 1.055;
       $value: pow($value, 2.4);
     }
 
@@ -1009,7 +1008,7 @@ Includes helper functions
 
   $lum: (map-get($colors, "red") * 0.2126) +
     (map-get($colors, "green") * 0.7152) + (map-get($colors, "blue") * 0.0722);
-  $lum: calc(round($lum * 1000) / 1000);
+  $lum: round($lum * 1000) / 1000;
 
   @return $lum;
 }
@@ -1056,7 +1055,7 @@ Includes helper functions
       $result: $result * 10 + map-get($numbers, $character);
     } @else {
       $digits: $digits * 10;
-      $result: calc($result + map-get($numbers, $character) / $digits);
+      $result: $result + map-get($numbers, $character) / $digits;
     }
   }
 
