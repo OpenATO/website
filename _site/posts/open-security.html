@@ -5,11 +5,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Introduction | OpenATO</title>
+<title>Open Source Compliance for Security | OpenATO</title>
 
 
 
-<meta name="description" content="Getting started.">
+<meta name="description" content="Open Source Methods Essential for Modern System Security and Compliance">
 
 
 
@@ -187,89 +187,67 @@
     
 
     
-      <main id="main-content" ="">
-        <div class="guide-container">
-    <div class="handbook-breadcrumb">
-        <div class="">
-            <nav class="usa-breadcrumb" aria-label="Breadcrumbs">
-                <ol class="usa-breadcrumb__list">
-                    <li class="usa-breadcrumb__list-item">
-                        <a href="/guide" class="usa-breadcrumb__link">
-                            <span class="guide-title">OpenATO Guide</span>
-                        </a>
-                    </li>
-                    <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
-                        <span>Introduction</span>
-                    </li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <div class="guide-main">
-        <div class="grid-row grid-gap">
-            
-            
-            <div class="usa-layout-docs__sidenav desktop:grid-col-3">
-                <nav aria-label="Secondary navigation">
-    <ul class="usa-sidenav">
-        
-        <a href="/guide/introduction" class="list-group-item list-group-item-action ">Introduction</a>
-        
-        <a href="/guide/stakeholders" class="list-group-item list-group-item-action ">Stakeholders</a>
-        
-        <a href="/guide/problem" class="list-group-item list-group-item-action ">Problem</a>
-        
-        <a href="/guide/solution" class="list-group-item list-group-item-action ">Solution</a>
-        
-        <a href="/guide/resources" class="list-group-item list-group-item-action ">Resources</a>
-        
-        <!--    
-    
-      
-      
-      
-    <li class="usa-sidenav__item">
-      <a href="/docs/"
-         
-          >
-         Sidenav Documentation
-      </a>
-      
-    </li>
-    
-      
-      
-      
-    <li class="usa-sidenav__item">
-      <a href="https://18f.gsa.gov"
-         
-          >
-         Sidenav External link
-      </a>
-      
-    </li>
-    
--->
-  </ul>
-</nav>
+      <div class="">
+    <div class="grid-container">
+        <div class="grid-row">
+            <div class="grid-col-12">
+                
+                <h1 class="font-heading-3xl">Open Source Compliance for Security</h1>
+                
             </div>
-            
-            <main class="usa-layout-docs usa-layout-docs__main usa-prose desktop:grid-col-9">
+        </div>
+        <div class="grid-row">
+            <div class="grid-col-2">
                 
-                <h1>Introduction</h1>
                 
-                <p>Welcome to the OpenATO Guide.</p>
+                
+                
+                
+                <div class="author">
+                    <p><a href="/people/fen-labalme"><img src="/assets/img/people/fen-labalme.jpg" alt="Fen Labalme" title="Fen Labalme"></a></p>
+                    <p>By <a href="/people/fen-labalme"> Fen Labalme</a></p>
+                    <p>September 3, 2024</p>
+                </div>
+                
+                
+            </div>
+            <div class="grid-col-1">
+            </div>
+            <div class="grid-col-9">
+                <div class="post-content">
+                    <p><strong>BLUF:</strong> We must adopt open source methods (transparency, collaboration, and collective intelligence) and widen the community and visibility of contributors to effectively manage the security, compliance, monitoring and assessment of (FISMA reportable) information systems in the continuously evolving cybersecurity landscape.</p>
 
-<p>Technology platforms are continuously evolving, CVEs are growing at 20% a year, and threats are increasing probably faster. No single group (contractor or agency) is up to the task of staying abreast of all the changes, yet we must. A path forward is to open the process up to community collaboration so that all can benefit from the updates made at the edges by other parties.</p>
+<p>There is <a href="https://openssf.org/">growing effort</a> to ensure the <a href="https://www.whitehouse.gov/oncd/briefing-room/2024/08/09/fact-sheet-biden-harris-administration-releases-end-of-year-report-on-open-source-software-security-initiative-2/">security of systems built with open source software</a> or a supply chain dependence upon open source software. Riding the open source wave increases the speed at which new technologies can be incorporated into the CI/CD pipeline, bringing new features, greater accessibility and enhanced security. But security compliance and authorizations to operate are stuck in a decades old, manual process that is getting slower and more cumbersome as new technologies are brought to bear. (ref: NIST’s <a href="https://www.nist.gov/itl/ai-risk-management-framework">AI Risk Management Framework</a> with 74 new controls released July 2024.)</p>
 
-<p>The platform needs to be open to encourage sharing. Catalog baselines, agency Profiles and system Components often contain little or no sensitive information and can easily be shared. Even SSPs and Assessment Plans can, for the most part, be open and shared. (Of course, the Assessment Results containing system vulnerabilities and POA&amp;Ms may be sensitive.) The goal is to slowly trim-tab the ship toward a fluid, evolving ecosystem of assertions and tests (covering the inventory of hardware, software, policy and processes) and away from static “paper” SSPs/ATOs.</p>
+<p>The OpenATO community is creating a collection of open source digital public goods that provide an essential, flexible and eventually comprehensive baseline for ensuring the security of systems. An open source, collaboratively maintained library of implementation and assessment tools is necessary to manage systems security compliance in this modern era.</p>
 
-            </main>
+<p>No single entity can stay abreast of the continuously evolving digital landscape, from document management to development environments and hosting platforms where bad actors are employing ever more sophisticated attack vectors, or may simply take advantage of improper configuration.</p>
+
+<p>To manage the testing of systems for cybersecurity compliance, the Department of Defense (DoD) has developed a series of Security Technical Implementation Guides (STIGs) for different applications and systems. Automated scanners employing the Security Content Automation Protocol (SCAP) can read these STIGs and test system configuration to ensure it is in compliance with best practices. But STIGs and SCAP only test static configuration compliance, and often lag well behind real world best practices. There is a clear need to enhance cybersecurity collaboration, following the best practices of open source software communities.</p>
+
+<p>Until now, such cooperation/collaboration would have been problematic, as there was no common language for expressing control implementation statements and assessment processes/evidence collection. Everything has been managed manually and ad hoc, using e.g. Word and Excel documents, often converted to (even more static) PDF format for delivery to assessment officers. Fortunately, NIST is proposing the Open Security Controls Assessment Language (OSCAL), a machine readable, data centric <em>lingua franca</em> that can express existing as well as emerging security vulnerabilities and mitigations.</p>
+
+                </div>
+                
+                
+                
+                
+                
+                
+                <div class="post-bio">
+                    <p>
+                      <p>Fen leads security and compliance for <a href="https://civicactions.com">CivicActions</a>.</p>
+
+                    </p>
+                </div>
+                
+                
+                
+            </div>
         </div>
     </div>
 </div>
 
-      </main>
     
 
     
@@ -286,11 +264,11 @@
       
         
 
-<a href="https://github.com/openato/website/edit/main/_guide/introduction.md" class="usa-sidenav-edit" target="_blank">Help improve this page</a>
+<a href="https://github.com/openato/website/edit/main/_posts/2024-09-03-open-security.md" class="usa-sidenav-edit" target="_blank">Help improve this page</a>
        
 
 <!--  // Date not working
-     &nbsp; &middot; &nbsp; Last updated: April 16, 2024 at 11:39 AM 
+     &nbsp; &middot; &nbsp; Last updated: November 06, 2024 at 08:26 PM 
 -->
         
       </p>
